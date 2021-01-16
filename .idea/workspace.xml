@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4e1bb2d8-0914-4193-82ac-8bbb17374a23" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/multifile.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/multifile_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger.go" beforeDir="false" afterPath="$PROJECT_DIR$/logger.go" afterDir="false" />
+    <list default="true" id="4e1bb2d8-0914-4193-82ac-8bbb17374a23" name="Default Changelist" comment="support multer file with logger name">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +31,7 @@
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="go.vgo" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -75,7 +74,8 @@
       </map>
     </option>
   </component>
-  <component name="VgoProject">
-    <integration-enabled>true</integration-enabled>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="support multer file with logger name" />
+    <option name="LAST_COMMIT_MESSAGE" value="support multer file with logger name" />
   </component>
 </project>
