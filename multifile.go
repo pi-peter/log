@@ -38,8 +38,19 @@ func (w *MultiFileWriter) WriteEntry(e *Entry) (n int, err error) {
 	if w.Writes == nil || len(w.Writes) < 1 {
 		return
 	}
+	find := false
 	for _, loggerFileName := range loggerFiles {
 		if writer, ok := w.Writes[loggerFileName]; ok {
+			find = true
+			n, err1 = writer.WriteEntry(e)
+			if err1 != nil && err == nil {
+				err = err1
+			}
+		}
+	}
+	if !find {
+		if writer, ok := w.Writes["default"]; ok {
+			find = true
 			n, err1 = writer.WriteEntry(e)
 			if err1 != nil && err == nil {
 				err = err1

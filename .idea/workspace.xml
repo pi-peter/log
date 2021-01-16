@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="4e1bb2d8-0914-4193-82ac-8bbb17374a23" name="Default Changelist" comment="support multer file with logger name">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/multifile.go" beforeDir="false" afterPath="$PROJECT_DIR$/multifile.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/multifile_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/multifile_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +40,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Go Test.TestMultiFileWriter in github.com/phuslu/log">
     <configuration name="TestMultiFileWriter in github.com/phuslu/log" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="log" />
       <working_directory value="$PROJECT_DIR$" />
@@ -50,9 +52,21 @@
       <pattern value="^\QTestMultiFileWriter\E$" />
       <method v="2" />
     </configuration>
+    <configuration name="TestMultiFileWriter in multifile_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="log" />
+      <working_directory value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <kind value="FILE" />
+      <package value="github.com/phuslu/log" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/multifile_test.go" />
+      <pattern value="^\QTestMultiFileWriter\E$" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Go Test.TestMultiFileWriter in github.com/phuslu/log" />
+        <item itemvalue="Go Test.TestMultiFileWriter in multifile_test.go" />
       </list>
     </recent_temporary>
   </component>
@@ -66,6 +80,31 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State />
@@ -73,9 +112,17 @@
         </entry>
       </map>
     </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="1" value="TOOL_WINDOW" />
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="support multer file with logger name" />
     <option name="LAST_COMMIT_MESSAGE" value="support multer file with logger name" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
   </component>
 </project>
