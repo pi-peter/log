@@ -27,9 +27,10 @@ var DefaultLogger = Logger{
 
 // Entry represents a log entry. It is instanced by one of the level method of Logger and finalized by the Msg or Msgf method.
 type Entry struct {
-	buf   []byte
-	Level Level
-	w     Writer
+	buf         []byte
+	Level       Level
+	w           Writer
+	loggerFiles []string
 }
 
 // Writer defines an entry writer interface.
@@ -280,6 +281,7 @@ func (l *Logger) header(level Level) *Entry {
 		return nil
 	}
 	e := epool.Get().(*Entry)
+	e.loggerFiles = make([]string, 0)
 	e.buf = e.buf[:0]
 	e.Level = level
 	if l.Writer != nil {
@@ -1441,6 +1443,15 @@ func (e *Entry) Dict(key string, ctx Context) *Entry {
 		e.buf = append(e.buf, ctx[1:]...)
 	}
 	e.buf = append(e.buf, '}')
+	return e
+}
+
+// Str adds the field key with val as a string to the entry.
+func (e *Entry) LoggerFile(name string) *Entry {
+	if e == nil {
+		return nil
+	}
+	e.loggerFiles = append(e.loggerFiles, name)
 	return e
 }
 
