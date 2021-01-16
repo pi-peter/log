@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4e1bb2d8-0914-4193-82ac-8bbb17374a23" name="Default Changelist" comment="add default logger for multifile file">
+    <list default="true" id="4e1bb2d8-0914-4193-82ac-8bbb17374a23" name="Default Changelist" comment="fix bug">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multifile.go" beforeDir="false" afterPath="$PROJECT_DIR$/multifile.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +119,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="support multer file with logger name" />
     <MESSAGE value="add default logger for multifile file" />
-    <option name="LAST_COMMIT_MESSAGE" value="add default logger for multifile file" />
+    <MESSAGE value="fix bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix bug" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
