@@ -32,19 +32,18 @@ func (w *MultiFileWriter) Close() (err error) {
 func (w *MultiFileWriter) WriteEntry(e *Entry) (n int, err error) {
 	var err1 error
 	loggerFiles := e.loggerFiles
-	if loggerFiles == nil || len(loggerFiles) < 1 {
-		return 0, nil
-	}
 	if w.Writes == nil || len(w.Writes) < 1 {
 		return
 	}
 	find := false
-	for _, loggerFileName := range loggerFiles {
-		if writer, ok := w.Writes[loggerFileName]; ok {
-			find = true
-			n, err1 = writer.WriteEntry(e)
-			if err1 != nil && err == nil {
-				err = err1
+	if loggerFiles != nil && len(loggerFiles) > 0 {
+		for _, loggerFileName := range loggerFiles {
+			if writer, ok := w.Writes[loggerFileName]; ok {
+				find = true
+				n, err1 = writer.WriteEntry(e)
+				if err1 != nil && err == nil {
+					err = err1
+				}
 			}
 		}
 	}
